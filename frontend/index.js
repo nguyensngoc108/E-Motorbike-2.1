@@ -57,13 +57,18 @@ function slider(index){
 setInterval(imgSlide,5000);
 
 
-window.addEventListener("scroll",function(){
-        x = window.scrollY;
-        if(x>100){
-                header.classList.add("sticky");
-        }
-        else{
-                header.remove.add("sticky");
-        }
+// window.addEventListener("scroll",function(){
+//         x = window.scrollY;
+//         if(x>100){
+//                 header.classList.add("sticky");
+//         }
+//         else{
+//                 header.remove.add("sticky");
+//         }
 
-})
+// })
+
+
+
+
+
