@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Web portal for motor servicing at home-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial scale="1.0">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+        <script src="https://kit.fontawesome.com/a416e9c3ba.js" crossorigin="anonymous"></script>
+        <title>Product</title>
+        
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="/frontend/images/logo.png" alt="logo" width="70px">
+            </div>
+            <div class="menu">
+                
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">SERVICES</a>
+                        <ul class="sub-menu">
+                            <li><a>FOR CARS</a></li>
+                            <li><a>FOR MOTORBIKES</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="">ACCESSORIES</a>
+                        <ul class="sub-menu">
+                            <li><a>FOR CARS</a></li>
+                            <li><a>FOR MOTORBIKES</a></li>
+                        </ul>    
+                    </li>
+                    <li><a href="">CONTACT</a></li>
+                    <li><a href="">ABOUT US</a></li>
+              
+
+            </div>
+            <div class="function">
+               
+                    <li><input placeholder="Search" type="text"><i class="fas fa-search"></i></li>
+                    <li><a class= "fa fa-paw" href=""></a></li>
+                    <li><a class= "fa fa-user" href=""></a></li>
+                    <li><a class= "fa fa-shopping-bag" href=""></a></li>
+                
+
+            </div>
+        </header>
+        <section class="product">
+            <div class="container">
+                <div class="product-top row">
+                    <p>Product</p><span>&#10230;</span><p>Name</p>
+                </div>
+                <div class="product-content row">
+                    <div class="product-content-left row">
+                        <div class="product-content-left-big-img">
+                            <img src="/frontend/images/car-engine-repair-and-replacement.jpeg">
+                        </div>
+                        <div class="product-content-left-small-img">
+                            <img src="/frontend/images/car-engine-repair-and-replacement.jpeg">
+                            <img src="/frontend/images/car-engine-repair-and-replacement.jpeg">
+                            <img src="/frontend/images/car-engine-repair-and-replacement.jpeg">
+                            <img src="/frontend/images/car-engine-repair-and-replacement.jpeg">
+
+                        </div>
+                    </div>
+                    <div class="product-content-right">
+                        <div class="product-content-right-product-name">
+                            <h1>Engine Repair</h1>
+                            <p>CODE: LS122</p>
+                        </div>
+                        <div class="product-content-right-product-price">
+                            <p><sup>$</sup>29.76</p>
+                        </div>
+                        <div class="quantity">
+                            <p style="font-weight: bold;">Quantity:</p>
+                            <input type="number" min="0" value="1">
+                        </div>
+                        <div class="product-content-right-product-button">
+                            <button><i class="fas fa-shopping-cart"></i> <p>ADD TO CART</p></button>
+                        </div>
+                        <div class="product-content-right-product-icon">
+                            <div class="product-content-right-product-icon-item">
+                                <i class="fas fa-phone-alt"></i><p>Hotline</p>
+                            </div>
+                            <div class="product-content-right-product-icon-item">
+                                <i class="fas fa-comments"></i><p>Chat</p>
+                            </div>
+                            <div class="product-content-right-product-icon-item">
+                                <i class="far fa-envelope"></i><p>Mail</p>
+                            </div>
+                        </div>
+                        <div class="product-content-right-bottom">
+                            <div class="product-content-right-bottom-top">
+                                &#8744;
+                            </div>
+                            <div class="product-content-right-bottom-content-big">
+                                <div class="product-content-right-bottom-content-title row">
+                                    <div class="product-content-right-bottom-content-title-item specific">
+                                        <p>Information</p>
+                                    </div>
+                                    <div class="product-content-right-bottom-content-title-item time">
+                                        <p>Time-Expected</p>
+                                    </div>
+                                </div>
+                                <div class="product-content-right-bottom-content">
+                                    <div class="product-content-right-bottom-content-specific">
+                                        <!-- Information about car services -->
+                                        <br>We provide a wide range of car services, from car repair to car maintenance. We have a team of experienced and professional mechanics who are always ready to serve you. We are always ready to serve you with the best quality and the best price.<br>
+                                    
+                                    </div>
+                                    <div class="product-content-right-bottom-content-time">
+                                        <!-- Time delivery -->
+                                       <br> 1-2 days<br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <script>
+            const information = document.querySelector(".specific")
+            const time = document.querySelector(".time")
+            const bigImg = document.querySelector(".product-content-left-big-img img")
+            const smallImg = document.querySelectorAll(".product-content-left-small-img img")
+
+            smallImg.forEach(function(imgItem,X){
+                imgItem.addEventListener("click",function(){
+                    bigImg.src = imgItem.src
+                })
+            })
+
+if(information){
+        information.addEventListener("click",function(){
+                console.log("click")
+        })
+}
+
+else if(time){
+        information.addEventListener("click",function(){
+                console.log("click")
+        })
+}
+
+        </script>
+        </section>
+
+        <section class="product-related container">
+            <div class="product-related-title">
+                <p>Related Products</p>
+            </div>
+            <div class="product-content row">
+                <div class="product-related-item">
+                    <img src="/frontend/images/car-engine-repair-and-replacement.jpeg" alt="">
+                    <h1>ENGINE REPAIR</h1>
+                    <p><sup>$</sup>39.99</p>
+                </div>
+                <div class="product-related-item">
+                    <img src="/frontend/images/car-engine-repair-and-replacement.jpeg" alt="">
+                    <h1>ENGINE REPAIR</h1>
+                    <p><sup>$</sup>39.99</p>
+                </div>
+                <div class="product-related-item">
+                    <img src="/frontend/images/car-engine-repair-and-replacement.jpeg" alt="">
+                    <h1>ENGINE REPAIR</h1>
+                    <p><sup>$</sup>39.99</p>
+                </div>
+                <div class="product-related-item">
+                    <img src="/frontend/images/car-engine-repair-and-replacement.jpeg" alt="">
+                    <h1>ENGINE REPAIR</h1>
+                    <p><sup>$</sup>39.99</p>
+                </div>
+                <div class="product-related-item">
+                    <img src="/frontend/images/car-engine-repair-and-replacement.jpeg" alt="">
+                    <h1>ENGINE REPAIR</h1>
+                    <p><sup>$</sup>39.99</p>
+                </div>
+            </div>
+
+        </section>
+        <br>
+        <hr>
+        <!-- App container -->
+<section class="app-container"> 
+    <p>Follow us on social media!</p>
+    <div class="app-social-network">
+        <a href="https://www.facebook.com/iughcmiu/"><img src="/frontend/images/Facebook.png" width="64px" height="64px"></a>
+        <a href="https://www.instagram.com/trn_thuann/"><img src="/frontend/images/Ins.png" width="64px" height="64px"></a>
+    </div>
+    <p>Contact us for collapse</p>
+    <input type="text" placeholder="Please enter your email...">
+</section>
+<!-- Footer -->
+<!-- TOP -->
+<div class="footer-top">
+    <li><a><img src="/images/dmca_protected_16_120.png" width="133.75px" height="50px" alt=""></a></li>
+    <li><a><img src="/images/img-congthuong.png" alt=""></a></li>
+    <li><a href=""></a>Liên hệ</li>
+    <li><a href=""></a>Tuyển dụng</li>
+    <li><a href=""></a>Giới thiệu</li>
+    <li>
+        <a href="" class="fab fa-facebook-f"></a>
+        <a href="" class="fab fa-instagram"></a>
+    </li>
+</div>
+<!-- CENTER -->
+<div class="footer-center">
+    <p>Công ty Cổ phần IU với số đăng ký kinh doanh: <b>0987654321</b> <br>
+    Registration address: Quarter 6, Thu Duc City, Ho Chi Minh City
+    Schedule maintenance, repair and upgrades: <b>0123456789</b>  
+    </p>
+</div>
+
+<div class="footer-bottom">
+    <p>©IUG All rights reserved</p>
+</div>
+    </body>
+
+
+        
+   
+</html>
