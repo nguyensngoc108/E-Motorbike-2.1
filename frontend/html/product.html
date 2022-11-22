@@ -98,22 +98,22 @@
                             </div>
                             <div class="product-content-right-bottom-content-big">
                                 <div class="product-content-right-bottom-content-title row">
-                                    <div class="product-content-right-bottom-content-title-item specific">
-                                        <p>Information</p>
+                                    <div class="product-content-right-bottom-content-title-item specific" >
+                                        <p onclick="myFunction1()">Information</p>
                                     </div>
                                     <div class="product-content-right-bottom-content-title-item time">
-                                        <p>Time-Expected</p>
+                                        <p onclick="myFunction2()">Time-Expected</p>
                                     </div>
                                 </div>
                                 <div class="product-content-right-bottom-content">
-                                    <div class="product-content-right-bottom-content-specific">
+                                    <div class="product-content-right-bottom-content specific">
                                         <!-- Information about car services -->
-                                        <br>We provide a wide range of car services, from car repair to car maintenance. We have a team of experienced and professional mechanics who are always ready to serve you. We are always ready to serve you with the best quality and the best price.<br>
+                                        <div id="text1">We provide a wide range of car services, from car repair to car maintenance. We have a team of experienced and professional mechanics who are always ready to serve you. We are always ready to serve you with the best quality and the best price.</div>
                                     
                                     </div>
-                                    <div class="product-content-right-bottom-content-time">
+                                    <div class="product-content-right-bottom-content time">
                                         <!-- Time delivery -->
-                                       <br> 1-2 days<br>
+                                       <div id="text2"> 1-2 days</div
                                     </div>
                                 </div>
                             </div>
@@ -122,8 +122,34 @@
                 </div>
             </div>
         <script>
-            const information = document.querySelector(".specific")
-            const time = document.querySelector(".time")
+
+function myFunction1() {
+  var x = document.getElementById('text1');
+  var y = document.getElementById('text2');
+  if (x.style.visibility === 'hidden' ) {
+    x.style.visibility = 'visible';
+    y.style.visibility = 'hidden';
+
+  } else {
+    x.style.visibility = 'hidden';
+    y.style.visibility = 'visible';
+
+  }
+}
+
+function myFunction2() {
+  var x = document.getElementById('text2');
+  if (x.style.visibility === 'hidden') {
+    x.style.visibility = 'visible';
+  } else {
+    x.style.visibility = 'hidden';
+  }
+}
+// function myFunction2() {
+//   document.querySelector(".time").innerHTML = "YOU CLICKED ME!";
+// }
+            // const information = document.querySelector(".specific")
+            // const time = document.querySelector(".time")
             const bigImg = document.querySelector(".product-content-left-big-img img")
             const smallImg = document.querySelectorAll(".product-content-left-small-img img")
 
@@ -133,17 +159,23 @@
                 })
             })
 
-if(information){
-        information.addEventListener("click",function(){
-                console.log("click")
-        })
-}
+// if(information){
+//         information.addEventListener("click",function(){
+//                 // console.log("click")
+//                 alert("information")
 
-else if(time){
-        information.addEventListener("click",function(){
-                console.log("click")
-        })
-}
+        
+        
+// })
+// }
+
+//  if(time){
+//         information.addEventListener("click",function(){
+//                 console.log("click")
+//                 alert("time")
+                
+//         })
+// }
 
         </script>
         </section>
