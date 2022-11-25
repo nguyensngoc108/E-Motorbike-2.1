@@ -982,3 +982,116 @@ delivery-content-left-button a{
 .delivery-content-right table tr td:first-child{
     text-align: left;
 }
+
+/* Payment */
+.payment{
+    padding: 100px 0;
+}
+.payment-top-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+   }
+.payment-top{
+       height:2px;
+       width: 70%;
+       background-color: #dddddd;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       margin: 50px 0px 100px;
+      
+   }
+.payment-top-item{
+       width: 40px;
+       height: 40px;
+       border-radius: 50%;
+       border : 1px solid #dddddd;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       background-color: #fff;
+   }
+.payment-top-item i{
+       color: #dddddd;
+}
+
+.payment-top-payment{
+    border: 1px solid #0DB7EA;
+}
+.delivery-top-payment i{
+    color: #0DB7EA;
+}
+
+.payment-content-left{
+    width: 60%;
+    padding: 0 12px;
+    justify-content: space-between;
+}
+.payment-content-right{
+    width: 40%;
+    border-left: 2px solid #ddd;
+    padding-left: 12px;
+}
+
+.payment-content-left p,label{
+    font-size: 15px;
+    font-family: var(--main-text-font);
+
+}
+
+.payment-content-right-button{
+    display: flex;
+    padding: 12px 0;
+    border-bottom: 1px dashed #dddddd;
+}
+.payment-content-right-button input{
+    height: 40px;
+    width: 200px;
+    margin-right: 100px;
+    padding-left: 12px;
+}
+
+.payment-content-right-button button{
+    height: 40px;
+    width: 100px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    margin-right: 12px;
+}
+.payment-content-right-button button:hover{
+    background-color: #0DB7EA;
+    
+}
+
+.payment-content-right-payment{
+    margin-top: 50px;
+    align-items: center;
+    text-align: center;
+}
+
+.payment-content-right-payment button{
+    height: 35px;
+    padding: 0 12px;
+    font-size: 15px;
+    color: black;
+    cursor: pointer;
+    border: 2px solid black;
+    transition: all 0.3s ease-in-out;
+}
+
+.payment-content-right-payment button:hover{
+    background-color: black;
+    color: white;
+}
+
+.payment-content-left-method-payment-item-img img{
+    width: 30%;
+    height: 30%;
+    object-fit: cover;
+
+}
