@@ -5,11 +5,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width", initial scale="1.0">
         <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="/frontend/images/favicon.ico">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
         <script src="https://kit.fontawesome.com/a416e9c3ba.js" crossorigin="anonymous"></script>
-        <title>Product</title>
+        <title>Cart</title>
         
     </head>
     <body>
@@ -34,7 +35,6 @@
                             <li><a>FOR MOTORBIKES</a></li>
                         </ul>    
                     </li>
-                    <li><a href="">CONTACT</a></li>
                     <li><a href="">ABOUT US</a></li>
               
 
@@ -44,13 +44,13 @@
                     <li><input placeholder="Search" type="text"><i class="fas fa-search"></i></li>
                     <li><a class= "fa fa-paw" href=""></a></li>
                     <li><a class= "fa fa-user" href=""></a></li>
-                    <li><a class= "fa fa-shopping-bag" href=""></a></li>
+                    <li><a class= "fa fa-shopping-bag" href="/frontend/html/cart.html"></a></li>
                 
 
             </div>
         </header>
     </section>
-
+    <!-- Cart section -->
         <section class="cart">
             <div class="container">
                 <div class="cart-top-wrap">
@@ -70,25 +70,25 @@
             <div class="container">
                 <div class="cart-content row">
                     <div class="cart-content-left">
-                        <table>
-                            <tr>
+                        <table class="cart-items">
+                            <tr class="cart-row">
                                 <th>Product</th>
                                 <th>Product name</th>
                                 <th>Quantity</th>
                                 <th>Subtotal</th>
                                 <th>Remove</th>
                             </tr>
-                            <tr>
+                            <tr class="cart-row">
                                 <td><img src="/frontend/images/car-engine-repair-and-replacement.jpeg" alt=""></td>
                                 <td><p>Engine Repair</p></td>
-                                <td><input type="number" value="1" min="1"></td>
+                                <td><input type="number" value="1" min="1" class="cart-quantity"></td>
                                 <td><p><sub>$</sub>39.99</p></td>
                                 <td><i class="fas fa-trash-alt"></i></td>
                             </tr>
                             <tr>
                                 <td><img src="/frontend/images/car-engine-repair-and-replacement.jpeg" alt=""></td>
                                 <td><p>Engine Repair</p></td>
-                                <td><input type="number" value="1" min="1"></td>
+                                <td><input type="number" value="1" min="1" class="cart-quantity"></td>
                                 <td><p><sub>$</sub>39.99</p></td>
                                 <td><i class="fas fa-trash-alt"></i></td>
                             </tr>
@@ -111,15 +111,17 @@
                             </tr>
                             <tr>
                                 <td>TOTAL</td>
-                                <td><p style="color: black; font-weight: bold"><sup>$</sup>39.99</p></td>
+                                <div class="total-price">
+                                    <td><p style="color: black; font-weight: bold"><sup>$</sup>39.99</p></td>
+                                </div>
                             </tr>
                         </table>
                         <div class="cart-content-right-text">
                             <p style="color: red; font-weight: bold">Buy <span style="font-size:18px;">$29.99</span> more to get free-delivery now!!!</p>
                         </div>
                         <div class="cart-content-right-button">
-                            <button>CONTINUE SHOPPING</button>
-                            <button>CHECKOUT</button>
+                          <a href=""></a>  <button>CONTINUE SHOPPING</button>
+                           <a href="/frontend/html/delivery.html"> <button>CHECKOUT</button></a>
                         </div>
                         <div class="cart-content-right-login">
                             <p>IU Account</p>
@@ -128,6 +130,44 @@
                     </div>
                 </div>
             </div>
+            <script>
+                var removeCartItemButton = document.getElementsByClassName('fas fa-trash-alt')
+                console.log(removeCartItemButton)
+                for (var i = 0; i < removeCartItemButton.length; i++) {
+                    var button = removeCartItemButton[i]
+                    button.addEventListener('click', function(event){
+                        var buttonClicked = event.target
+                        var cartItem = buttonClicked.parentElement.parentElement
+                        cartItem.remove()
+                        updateCartTotal()
+        
+            })
+            }
+            function updateCartTotal(){
+    var cartItemContainer =  document.getElementsByClassName('cart-items')[0]
+    var cartRows = cartItemContainer.getElementsByClassName('cart-row')
+    for (var i = 0; i < cartRows.length; i++){
+        var cartRow = cartRows[i]
+        var priceElement = cartRow.getElementsByClassName('cart-price')[0]
+        var quantityElement = cartRow.getElementsByClassName('cart-quantity')[0]
+        var quantity = quantityElement.value
+        var price = parseFloat(priceElement.innerText.replace('$', ''))
+        var quantity = quantityElement.value
+        total = total + (price * quantity);
+        total = Math.round(total * 100) / 100
+
+        document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total
+
+    }
+}
+        function quantityChange(event){
+            var input = event.target
+            if (isNaN(input.value) || input.value <= 0){
+                input.value = 1
+            }
+            updateCartTotal()
+        }
+            </script>
         </section>
         <hr>
        <!-- App container -->
@@ -144,8 +184,7 @@
     <!-- Footer -->
     <!-- TOP -->
     <div class="footer-top">
-        <li><a><img src="/images/dmca_protected_16_120.png" width="133.75px" height="50px" alt=""></a></li>
-        <li><a><img src="/images/img-congthuong.png" alt=""></a></li>
+        <li><a><img src="/frontend/images/confirm_logo.png" width="133.75px" height="50px" alt=""></a></li>
         <li><a href=""></a>Liên hệ</li>
         <li><a href=""></a>Tuyển dụng</li>
         <li><a href=""></a>Giới thiệu</li>

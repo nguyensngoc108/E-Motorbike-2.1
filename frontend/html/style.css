@@ -158,6 +158,97 @@ header:hover{
 }
 
 
+/* Featured Services */
+
+.categories{
+    margin: 30px 0;
+}
+.col-3{
+    flex-basis:30%;
+    width: 30%;
+    padding-left: 41px;
+    margin-bottom: 10px;
+    display: inline-block;   
+}
+
+.col-3 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.small-container{
+    max-width: 1300px;
+    padding-left: 50px;
+
+}
+h2{
+    text-align: center;
+    margin-bottom: 100px;
+    font-size: 40px;
+    padding-left: 100px;
+}
+
+h2::after{
+    content: '';
+    display: block;
+    width: 100px;
+    height: 5px;
+    background-color:#000;
+    margin: auto;
+    margin-top: 10px;
+}
+h4{
+    text-align: center;
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+
+
+.col-4{
+    flex-basis: 25%;
+    width: 25%;
+    padding-left: 41px;
+    margin-bottom: 10px;
+    display: inline-block;  
+    transition: all 0.5s ease-in-out;
+}
+.col-4:hover{
+    transform: translateY(-5px);
+
+}
+.col-4 p{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 13px;
+    position:relative;
+    color:#555;
+    line-height: 20px;
+}
+.col-4 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+/* Featured products */
+.col-4{
+    flex-basis: 25%;
+    width: 20%;
+    padding-left: 61px;
+
+    margin-bottom: 50px;
+    display: inline-block;
+    cursor: pointer;
+    
+}
+.col-4-price{
+    text-decoration: line-through;
+}
+
 .footer {
     text-align: center;
 }
@@ -1020,7 +1111,7 @@ delivery-content-left-button a{
 .payment-top-payment{
     border: 1px solid #0DB7EA;
 }
-.delivery-top-payment i{
+.payment-top-payment i{
     color: #0DB7EA;
 }
 
