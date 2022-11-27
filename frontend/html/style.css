@@ -1186,3 +1186,48 @@ delivery-content-left-button a{
     object-fit: cover;
 
 }
+
+/* About Us */
+
+.about-left{
+    width: 60%;
+    margin-left: 20px;
+}
+.about-left p{
+    font-family: "Montserrat",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Avenir,"Helvetica-Neue","Helvetica","Arial",sans-serif;
+}
+.about-header h1{
+    margin-top: 100px;
+    text-align: center;
+    margin-bottom: 100px;
+    font-size: 40px;
+    padding-left: 100px;
+}
+
+.about-header h1::after{
+    content: '';
+        display: block;
+        width: 100px;
+        height: 5px;
+        background-color:#000;
+        margin: auto;
+        margin-top: 10px;
+}
+.intro-image img{
+    margin-top: 20px;
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    padding-left: 10px;
+}
+.intro-image figcaption{
+    font-size: 15px;
+    font-family: var(--main-text-font);
+    margin-top: 10px;
+    margin-left: 140px;
+}
+.about-right{
+    flex: 1;
+    padding-left: 12px;
+    border-left: 2px solid #dddddd;
+}
