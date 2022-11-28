@@ -248,7 +248,7 @@ include "/xampp/htdocs/E-Motorbike-2.3-main/admin/class/product_class.php";
                         $show_product = $product -> show_product();
                 ?>
                 <div class="services-right-content row">
-                    <div class="services-right-content-item">
+                    <div class="services-right-content-item row">
                         
                         <table>
                         <tr>
