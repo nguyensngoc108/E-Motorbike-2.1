@@ -1,5 +1,5 @@
 <?php
-include "database.php";
+include "/xampp/htdocs/E-Motorbike-2.3-main/admin/database.php";
 ?>
 <?php
 class product {
@@ -24,10 +24,23 @@ class product {
         $result = $this -> db -> select($query);
         return $result;
     }
+    public function show_product(){
+        $query = "SELECT tbl_product.*, tbl_brand.brand_name
+        FROM tbl_product INNER JOIN tbl_brand ON tbl_product.brand_id = tbl_brand.brand_id
+        ORDER BY tbl_product.product_id DESC";
+        $resultforproduct = $this -> db -> select($query);
+        return $resultforproduct;
+    }
 
     public function show_brand_ajax($category_id){
         $query = "SELECT * FROM tbl_brand WHERE category_id = '$category_id'";
         $result = $this -> db -> select($query);
+        return $result;
+    }
+    public function delete_product($product_id){
+        $query = "DELETE FROM tbl_product WHERE product_id = '$product_id' ";
+        $result = $this -> db ->detele($query);
+        header('Location:productlist.php');
         return $result;
     }
     
@@ -38,11 +51,41 @@ class product {
         $product_price = $_POST['product_price'];
         $product_price_new = $_POST['product_price_new'];
         $product_desc = $_POST['product_desc'];
-        $product_img = $_FILES['product_img']['name'];
-        $filetarget = basename($_FILES['product_img']['name']);
+        $product_img = $_FILES['product_image'];
         
-
-        move_uploaded_file($_FILES['product_img']['tmp_name'],"upload-images/".$_FILES['product_img']['name']);
+        // image handle
+        if($product_img["error"] === 4) {
+            echo "<script>alert('Image doesn't exist'); </script>";
+        }
+        else {
+            $fileName = $_FILES['product_image']["name"];
+            $fileSize = $_FILES['product_image']["size"];
+            $tmpName  = $_FILES['product_image']["tmp_name"];
+    
+            $validImageExtension = ['jpg', 'jpeg', 'png'];
+            $imageExtension = explode('.', $fileName);
+            $imageExtension = strtolower(end($imageExtension));
+            if(!in_array($imageExtension, $validImageExtension)) {
+                echo "<script> alert('Invalid Image extension'); </script>";
+    
+            }
+            else if($fileSize > 1000000) {
+                echo "<script> alert('Image size is too large'); </script>";
+            }
+            else {
+                $newImageName = uniqid();
+                $newImageName .= '.' .$imageExtension;
+                // $finalImage = $newImageName;
+    
+                move_uploaded_file($tmpName, 'img-on-php/' . $newImageName);
+                echo 
+                "<script> 
+                    alert('Successfully added'); 
+                    document.location.href = 'productlist.php';
+                </script>";
+            }
+        }
+        // move_uploaded_file($tmpName, 'img-on-php/' . $newImageName);
         $query = "INSERT INTO tbl_product (
             product_name, 
             category_id,
@@ -58,7 +101,7 @@ class product {
             '$product_price',
             '$product_price_new',
             '$product_desc',
-            '$product_img')";
+            '$newImageName')";
         $result = $this -> db -> insert($query);
 
         if($result) {

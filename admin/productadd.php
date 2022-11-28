@@ -1,7 +1,7 @@
 <?php
 include "header.php";
 include "slider.php";
-include "class/product_class.php";
+include "/xampp/htdocs/E-Motorbike-2.3-main/admin/class/product_class.php";
 ?>
 
 <?php
@@ -12,22 +12,24 @@ if($_SERVER['REQUEST_METHOD']=== 'POST') {
     // echo '<pre>';
     // echo print_r($_POST['product_img_desc']);
     // echo '<pre>';
+    // $product_img = $_FILES['product_img'];
+    // echo $product_img;
 
-    $insert_product = $product -> insert_product($_POST, $_FILES);
+    $insert_product = $product -> insert_product();
 }
 
 ?>
 
 
 <div class="admin-content-right">
-            <div class="admin-content-right-product_add">
-                <h1>Thêm sản phẩm</h1>
-                <form action="" method="POST" enctype="multipart/form-data">
-                    <label for="">Nhập tên sản phẩm<span style="color: red">*</span></label>
-                    <input name="product_name" required type="text">
+    <div class="admin-content-right-product_add">
+        <h1>Thêm sản phẩm</h1>
+            <form action="" method="POST" enctype="multipart/form-data">
+            <label for="">Nhập tên sản phẩm<span style="color: red">*</span></label>
+            <input name="product_name" required type="text">
 
-                    <label for="">Chọn danh mục<span style="color: red">*</span></label>
-                    <select name="category_id" id="category_id">
+            <label for="">Chọn danh mục<span style="color: red">*</span></label>
+            <select name="category_id" id="category_id">
                         <option value="#">--Chọn--</option>
                         <?php
                         $show_category = $product -> show_category();
@@ -61,11 +63,10 @@ if($_SERVER['REQUEST_METHOD']=== 'POST') {
                     
                     
                     <label for="">Ảnh sản phẩm<span style="color: red">*</span></label>
-                    
-                    <input name="product_img" required type="file">
+                    <input name="product_image" required type="file">
 
                     <label for="">Ảnh mô tả<span style="color: red">*</span></label>
-                    <input name="product_img_desc[]" required multiple type="file">
+                    <input name="product_img_desc" required multiple type="file">
                     <button type="submit">Thêm</button>
                 </form>
             </div>
@@ -102,3 +103,4 @@ if($_SERVER['REQUEST_METHOD']=== 'POST') {
 
 </script>
 </html>
+
