@@ -1,5 +1,5 @@
 <?php
-include "/xampp/htdocs/E-Motorbike-2.3-main/admin/class/product_class.php";
+include "/xampp/htdocs/E-Motorbike-2.3-main/backend/admin/class/product_class.php";
 
 if($_SERVER['REQUEST_METHOD'] === 'POST') {
     $add_to_cart = $addCart -> add_to_Cart();
@@ -70,7 +70,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
         </li>
             
 
-        <li><a href="accessories.html">ACCESSORIES</a>
+        <li><a href="/frontend/php/accessories-theFinal.php">ACCESSORIES</a>
             <ul class="sub-menu">
                 <li><a herf="">Electricity</a></li>
                     <ul>
@@ -115,8 +115,8 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
             </ul>
         </li>
 
-        <li><a href="about-us.html">ABOUT US</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="/frontend/php/aboutus.php">ABOUT US</a></li>
+        <li><a href="/frontend/php/contant.php">CONTACT</a></li>
     </div>
     
     <div class="others">

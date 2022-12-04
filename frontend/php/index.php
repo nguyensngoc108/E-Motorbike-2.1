@@ -15,12 +15,12 @@ session_start();
 <body>
 <header>
     <div class="logo">
-        <a href="index.html"><img src="/frontend/images/logo.png" width="64px" height="64px" ></a>
+        <a href="/frontend/php/index.php"><img src="/frontend/images/logo.png" width="64px" height="64px" ></a>
     </div>
         
     <div class="menu">
         <!-- <li><a href="index.html">HOME</a></li> -->
-        <li><a href="/final/services.php">SERVICES</a>
+        <li><a href="/frontend/php/services-theFinal.php">SERVICES</a>
             <ul class="sub-menu">
                 <li><a herf="">Maintenance packages</a></li>
                     <ul>
@@ -66,7 +66,7 @@ session_start();
         </li>
             
 
-        <li><a href="accessories.html">ACCESSORIES</a>
+        <li><a href="/frontend/php/accessories-theFinal.php">ACCESSORIES</a>
             <ul class="sub-menu">
                 <li><a herf="">Electricity</a></li>
                     <ul>
@@ -111,8 +111,8 @@ session_start();
             </ul>
         </li>
 
-        <li><a href="about-us.html">ABOUT US</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="/frontend/php/aboutus.php">ABOUT US</a></li>
+        <li><a href="/frontend/php/contact.php">CONTACT</a></li>
     </div>
     
     <div class="others">
@@ -135,8 +135,8 @@ session_start();
 <section class="app-container"> 
     <p>Follow us on social media!</p>
     <div class="app-social-network">
-        <a href="https://www.facebook.com/iughcmiu/"><img src="/images/Facebook.png" width="64px" height="64px"></a>
-        <a href="https://www.instagram.com/trn_thuann/"><img src="/images/Ins.png" width="64px" height="64px"></a>
+        <a href="https://www.facebook.com/iughcmiu/"><img src="/frontend/images/Facebook.png" width="64px" height="64px"></a>
+        <a href="https://www.instagram.com/trn_thuann/"><img src="/frontend/images/Ins.png" width="64px" height="64px"></a>
     </div>
     <p>Contact us for collapse</p>
     <input type="text" placeholder="Please enter your email...">
@@ -144,8 +144,7 @@ session_start();
 <!-- Footer -->
 <!-- TOP -->
 <div class="footer-top">
-    <li><a><img src="/images/dmca_protected_16_120.png" width="133.75px" height="50px" alt=""></a></li>
-    <li><a><img src="/images/img-congthuong.png" alt=""></a></li>
+    <li><a><img src="/frontend/images/confirm_logo.png" width="133.75px" height="50px" alt=""></a></li>
     <li><a href=""></a>Liên hệ</li>
     <li><a href=""></a>Tuyển dụng</li>
     <li><a href=""></a>Giới thiệu</li>

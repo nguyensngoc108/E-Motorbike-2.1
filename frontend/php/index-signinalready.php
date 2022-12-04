@@ -15,14 +15,14 @@ session_start();
 <body>
 <header>
     <div class="logo">
-        <a href="index.html"><img src="/images/logo.png" width="64px" height="64px" ></a>
+        <a href="/frontend/php/index-signinalready.php"><img src="/frontend/images/logo.png" width="64px" height="64px" ></a>
     </div>
         
     <div class="menu">
         <!-- <li><a href="index.html">HOME</a></li> -->
-        <li><a href="services.php">SERVICES</a>
+        <li><a href="/frontend/php/services-theFinal.php">SERVICES</a>
             <ul class="sub-menu">
-                <li><a herf="">Maintenance Packages</a></li>
+                <li><a herf="">Maintenance packages</a></li>
                     <ul>
                         <li><a href="service1-1.html">Maintenance package 1</a></li>
                         <li><a href="service1-2.html">Maintenance package 2</a></li>
@@ -66,51 +66,50 @@ session_start();
         </li>
             
 
-        <!-- ACCESSORIES -->
-        <li class="serivces-left-li"><a href=""><b><br>ACCESSORIES</b></a></li>
+        <li><a href="/frontend/php/accessories-theFinal.php">ACCESSORIES</a>
+            <ul class="sub-menu">
+                <li><a herf="">Electricity</a></li>
                     <ul>
-                        <li class="services-left-li-ul"><a herf="">Electricity</a></li>
-                            <ul class="services-left-li-ul-li">
-                                <li><a href="service1-1.html">Electricity 1</a></li>
-                                <li><a href="service1-2.html">Electricity 2</a></li>
-                                <li><a href="service1-3.html">Electricity 3</a></li>
-                                <li><a href="service1-4.html">Electricity 4</a></li>
-                                <li><a href="service1-5.html">Electricity 5</a></li>
-                            </ul>
-                        <li class="services-left-li-ul"><a herf="service2.html">Repair</a></li>
-                            <ul class="services-left-li-ul-li">
-                                <li><a href="service2-1.html">Repair 1</a></li>
-                                <li><a href="service2-2.html">Repair 2</a></li>
-                                <li><a href="service2-3.html">Repair 3</a></li>
-                                <li><a href="service2-4.html">Repair 4</a></li>
-                                <li><a href="service2-5.html">Repair 5</a></li>
-                            </ul>
-                        <li class="services-left-li-ul"><a herf="service3.html">Upgrade</a></li>
-                            <ul class="services-left-li-ul-li">
-                                <li><a href="service3-1.html">Upgrade 1</a></li>
-                                <li><a href="service3-2.html">Upgrade 2</a></li>
-                                <li><a href="service3-3.html">Upgrade 3</a></li>
-                                <li><a href="service3-4.html">Upgrade 4</a></li>
-                                <li><a href="service3-5.html">Upgrade 5</a></li>
-                            </ul>
-                        <li class="services-left-li-ul"><a herf="service4.html">Change the texture</a></li>
-                            <ul class="services-left-li-ul-li">
-                                <li><a href="service4-1.html">Change the texture 1</a></li>
-                                <li><a href="service4-2.html">Change the texture 2</a></li>
-                                <li><a href="service4-3.html">Change the texture 3</a></li>
-                                <li><a href="service4-4.html">Change the texture 4</a></li>
-                                <li><a href="service4-5.html">Change the texture 5</a></li>
-                            </ul>
-                        <li class="services-left-li-ul"><a herf="service5.html">Upgrade new accessories</a></li>
-                            <ul class="services-left-li-ul-li">
-                                <li><a href="service5-1.html">Upgrade new accessories 1</a></li>
-                                <li><a href="service5-2.html">Upgrade new accessories 2</a></li>
-                                <li><a href="service5-3.html">Upgrade new accessories 3</a></li>
-                                <li><a href="service5-4.html">Upgrade new accessories 4</a></li>
-                                <li><a href="service5-5.html">Upgrade new accessories 5</a></li>
-                            </ul>
+                        <li><a href="service1-1.html">Bảo dưỡng 1</a></li>
+                        <li><a href="service1-2.html">Bảo dưỡng 2</a></li>
+                        <li><a href="service1-3.html">Bảo dưỡng 3</a></li>
+                        <li><a href="service1-4.html">Bảo dưỡng 4</a></li>
+                        <li><a href="service1-5.html">Bảo dưỡng 5</a></li>
                     </ul>
-                </ul>
+                <li><a herf="service2.html">Vehicle body</a></li>
+                    <ul>
+                        <li><a href="service2-1.html">Sửa chữa 1</a></li>
+                        <li><a href="service2-2.html">Sửa chữa 2</a></li>
+                        <li><a href="service2-3.html">Sửa chữa 3</a></li>
+                        <li><a href="service2-4.html">Sửa chữa 4</a></li>
+                        <li><a href="service2-5.html">Sửa chữa 5</a></li>
+                    </ul>
+                <li><a herf="service3.html">Engine/Exhaust</a></li>
+                    <ul>
+                        <li><a href="service3-1.html">Nâng cấp 1</a></li>
+                        <li><a href="service3-2.html">Nâng cấp 2</a></li>
+                        <li><a href="service3-3.html">Nâng cấp 3</a></li>
+                        <li><a href="service3-4.html">Nâng cấp 4</a></li>
+                        <li><a href="service3-5.html">Nâng cấp 5</a></li>
+                    </ul>
+                <li><a herf="service4.html">Brake</a></li>
+                    <ul>
+                        <li><a href="service4-1.html">Thay đổi kết cấu 1</a></li>
+                        <li><a href="service4-2.html">Thay đổi kết cấu 2</a></li>
+                        <li><a href="service4-3.html">Thay đổi kết cấu 3</a></li>
+                        <li><a href="service4-4.html">Thay đổi kết cấu 4</a></li>
+                        <li><a href="service4-5.html">Thay đổi kết cấu 5</a></li>
+                    </ul>
+                <li><a herf="service5.html">Accessory</a></li>
+                    <ul>
+                        <li><a href="service5-1.html">Lên đời 1</a></li>
+                        <li><a href="service5-2.html">Lên đời 2</a></li>
+                        <li><a href="service5-3.html">Lên đời 3</a></li>
+                        <li><a href="service5-4.html">Lên đời 4</a></li>
+                        <li><a href="service5-5.html">Lên đời 5</a></li>
+                    </ul>
+            </ul>
+        </li>
 
         <li><a href="about-us.html">ABOUT US</a></li>
         <li><a href="contact.html">CONTACT</a></li>

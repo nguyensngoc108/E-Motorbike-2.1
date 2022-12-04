@@ -1,5 +1,5 @@
 <?php
-include "/xampp/htdocs/E-Motorbike-2.3-main/admin/class/product_class.php";
+include "/xampp/htdocs/E-Motorbike-2.3-main/backend/admin/class/product_class.php";
 
 if($_SERVER['REQUEST_METHOD'] === 'POST') {
     $add_to_cart = $addCart -> add_to_Cart();
@@ -19,7 +19,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
 <header>
     <div class="logo">
-        <a href="/final/index.php"><img src="/images/logo.png" width="64px" height="64px" ></a>
+        <a href="/frontend/php/index.php"><img src="/frontend/images/logo.png" width="64px" height="64px" ></a>
     </div>
         
     <div class="menu">
@@ -70,7 +70,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
         </li>
             
 
-        <li><a href="accessories.html">ACCESSORIES</a>
+        <li><a href="/frontend/php/accessories-theFinal.php">ACCESSORIES</a>
             <ul class="sub-menu">
                 <li><a herf="">Electricity</a></li>
                     <ul>
@@ -115,8 +115,8 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
             </ul>
         </li>
 
-        <li><a href="about-us.html">ABOUT US</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="/frontend/php/aboutus.php">ABOUT US</a></li>
+        <li><a href="/frontend/php/contant.php">CONTACT</a></li>
     </div>
     
     <div class="others">
@@ -136,27 +136,101 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
     </div>
     <div class="container">
-      <div class="row">
-        <div class="category-left">
-            <ul>
-                <li class="category-left-li"><a href="">Category</a>
+        <div class="row">
+            <div class="services-left">
+                <!-- SERVICES -->
                 <ul>
-                    <li><a href="">Category x</a></li>
-                    <li><a href="">Category x</a></li>
-                    <li><a href="">Category x</a></li>
-                    <li><a href="">Category x</a></li>
+                    <li class="services-left-li"><a href="services.html"><b>SERVICES</b></a></li>
+                    <ul>
+                        <li class="services-left-li-ul"><a>Maintenance packages</a></li>
+                            <ul class="services-left-li-ul-li">
+                                <li><a href="service1-1.html">Maintenance package 1</a></li>
+                                <li><a href="service1-2.html">Maintenance package 2</a></li>
+                                <li><a href="service1-3.html">Maintenance package 3</a></li>
+                                <li><a href="service1-4.html">Maintenance package 4</a></li>
+                                <li><a href="service1-5.html">Maintenance package 5</a></li>
+                            </ul>
+                        <li class="services-left-li-ul"><a herf="service2.html">Repair package</a></li>
+                            <ul class="services-left-li-ul-li">
+                                <li><a href="service2-1.html">Repair package 1</a></li>
+                                <li><a href="service2-2.html">Repair package 2</a></li>
+                                <li><a href="service2-3.html">Repair package 3</a></li>
+                                <li><a href="service2-4.html">Repair package 4</a></li>
+                                <li><a href="service2-5.html">Repair package 5</a></li>
+                            </ul>
+                        <li class="services-left-li-ul"><a herf="service3.html">Upgrade packages</a></li>
+                            <ul class="services-left-li-ul-li">
+                                <li><a href="service3-1.html">Upgrade package 1</a></li>
+                                <li><a href="service3-2.html">Upgrade package 2</a></li>
+                                <li><a href="service3-3.html">Upgrade package 3</a></li>
+                                <li><a href="service3-4.html">Upgrade package 4</a></li>
+                                <li><a href="service3-5.html">Upgrade package 5</a></li>
+                            </ul>
+                        <li class="services-left-li-ul"><a herf="service4.html">Texture Change packages</a></li>
+                            <ul class="services-left-li-ul-li">
+                                <li><a href="service4-1.html">Texture Change package 1</a></li>
+                                <li><a href="service4-2.html">Texture Change package 2</a></li>
+                                <li><a href="service4-3.html">Texture Change package 3</a></li>
+                                <li><a href="service4-4.html">Texture Change package 4</a></li>
+                                <li><a href="service4-5.html">Texture Change package 5</a></li>
+                            </ul>
+                        <li class="services-left-li-ul"><a herf="service5.html">Spare Parts package</a></li>
+                            <ul class="services-left-li-ul-li">
+                                <li><a href="service5-1.html">Spare Parts package 1</a></li>
+                                <li><a href="service5-2.html">Spare Parts package 2</a></li>
+                                <li><a href="service5-3.html">Spare Parts package 3</a></li>
+                                <li><a href="service5-4.html">Spare Parts package 4</a></li>
+                                <li><a href="service5-5.html">Spare Parts package 5</a></li>
+                            </ul>
+                    </ul>
+                
+                <!-- ACCESSORIES -->
+                    <li class="services-left-li"><a href=""><b><br>ACCESSORIES</b></a></li>
+                    <ul>
+                        <li class="services-left-li-ul"><a herf="">Electricity</a></li>
+                            <ul class="services-left-li-ul-li">
+                                <li><a href="service1-1.html">Electricity 1</a></li>
+                                <li><a href="service1-2.html">Electricity 2</a></li>
+                                <li><a href="service1-3.html">Electricity 3</a></li>
+                                <li><a href="service1-4.html">Electricity 4</a></li>
+                                <li><a href="service1-5.html">Electricity 5</a></li>
+                            </ul>
+                        <li class="services-left-li-ul"><a herf="service2.html">Repair</a></li>
+                            <ul class="services-left-li-ul-li">
+                                <li><a href="service2-1.html">Repair 1</a></li>
+                                <li><a href="service2-2.html">Repair 2</a></li>
+                                <li><a href="service2-3.html">Repair 3</a></li>
+                                <li><a href="service2-4.html">Repair 4</a></li>
+                                <li><a href="service2-5.html">Repair 5</a></li>
+                            </ul>
+                        <li class="services-left-li-ul"><a herf="service3.html">Upgrade</a></li>
+                            <ul class="services-left-li-ul-li">
+                                <li><a href="service3-1.html">Upgrade 1</a></li>
+                                <li><a href="service3-2.html">Upgrade 2</a></li>
+                                <li><a href="service3-3.html">Upgrade 3</a></li>
+                                <li><a href="service3-4.html">Upgrade 4</a></li>
+                                <li><a href="service3-5.html">Upgrade 5</a></li>
+                            </ul>
+                        <li class="services-left-li-ul"><a herf="service4.html">Change the texture</a></li>
+                            <ul class="services-left-li-ul-li">
+                                <li><a href="service4-1.html">Change the texture 1</a></li>
+                                <li><a href="service4-2.html">Change the texture 2</a></li>
+                                <li><a href="service4-3.html">Change the texture 3</a></li>
+                                <li><a href="service4-4.html">Change the texture 4</a></li>
+                                <li><a href="service4-5.html">Change the texture 5</a></li>
+                            </ul>
+                        <li class="services-left-li-ul"><a herf="service5.html">Upgrade new accessories</a></li>
+                            <ul class="services-left-li-ul-li">
+                                <li><a href="service5-1.html">Upgrade new accessories 1</a></li>
+                                <li><a href="service5-2.html">Upgrade new accessories 2</a></li>
+                                <li><a href="service5-3.html">Upgrade new accessories 3</a></li>
+                                <li><a href="service5-4.html">Upgrade new accessories 4</a></li>
+                                <li><a href="service5-5.html">Upgrade new accessories 5</a></li>
+                            </ul>
+                    </ul>
                 </ul>
-                </li>
-                <li class="category-left-li"><a href="">Services</a>
-                <ul>
-                    <li><a href="">Category x</a></li>
-                    <li><a href="">Category x</a></li>
-                    <li><a href="">Category x</a></li>
-                    <li><a href="">Category x</a></li>
-                </ul>
-                </li>
-            </ul>
-        </div>
+
+            </div>
         <div class="category-right row">
             <div class="category-right-top-item">
                 <p>Services</p>
