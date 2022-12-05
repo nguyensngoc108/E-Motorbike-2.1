@@ -1,7 +1,7 @@
 <?php
-include "header.php";
-include "slider.php";
-include "class/brand_class.php";
+include "/xampp/htdocs/E-Motorbike-2.3-main/backend/admin/header.php";
+include "/xampp/htdocs/E-Motorbike-2.3-main/backend/admin/slider.php";
+include "/xampp/htdocs/E-Motorbike-2.3-main/backend/admin/class/brand_class.php";
 ?>
 <?php
 $brand = new brand;

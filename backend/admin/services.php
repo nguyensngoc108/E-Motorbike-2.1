@@ -10,7 +10,7 @@ include "/xampp/htdocs/E-Motorbike-2.3-main/admin/class/product_class.php";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/1147679ae7.js" crossorigins="anonymous"></script>
-    <link rel="stylesheet" href="/frontend/style.css">
+    <link rel="stylesheet" href="/frontend/style-for-admin.css">
     <title>MOTOR-PROJECT</title>
 </head>
 <body>

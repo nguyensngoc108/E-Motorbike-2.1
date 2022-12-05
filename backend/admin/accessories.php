@@ -1,5 +1,5 @@
 <?php
-include "/xampp/htdocs/E-Motorbike-2.3-main/admin/class/product_class.php";
+include "/xampp/htdocs/E-Motorbike-2.3-main/backend/admin/class/product_class.php";
 ?>
 
 
