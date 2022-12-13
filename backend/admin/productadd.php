@@ -1,7 +1,7 @@
 <?php
 include "header.php";
 include "slider.php";
-include "/xampp/htdocs/E-Motorbike-2.3-main/admin/class/product_class.php";
+include "/xampp/htdocs/E-Motorbike-2.3-main/backend/admin/class/product_class.php";
 ?>
 
 <?php
@@ -46,11 +46,11 @@ if($_SERVER['REQUEST_METHOD']=== 'POST') {
                     </select>
                     
 
-                    <label for="">Chọn loại sản phẩm<span style="color: red">*</span></label>
+                    <label for="">Choose type of product<span style="color: red;">*</span></label>
                     <select name="brand_id" id="brand_id">
-                        <label for="">Choose type of product<span style="color: red">*</span></label>
+                        <label for="">Choose type of product<span style="color: red;">*</span></label>
                         <option value="#">--Choose--</option>
-                        
+
                     </select>
 
                     <label for="">Price<span style="color: red">*</span></label>
@@ -91,7 +91,7 @@ if($_SERVER['REQUEST_METHOD']=== 'POST') {
 
 <script>
 
-    //recieve the type of services and give it to the myadminphp
+    //receive the type of services and give it to the myadminphp
     $(document).ready(function() {
         $("#category_id").change(function() {
             // alert($(this).val())
