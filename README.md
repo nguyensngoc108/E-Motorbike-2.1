@@ -1,4 +1,14 @@
 
+<h1 align="center"> WebPortal for Motor Servicing at Home </h1>
+
+## 🚀 About the Project
+This project is going to be for an automobile workshop that is intending to deliver doorstep service. The workshop be able to displace their services and cost on the website. Users must able to register and login to cart the required services. Users must then be able to confirm the service time and complete the checkout process.
+## 🧐 Features
+- Registration and Login
+- Add items or services into cart
+- Check out the the products
+
+
 ## UX
 
 The purpose of the the project is to create a e-commerce app for everyone interested in shopping online. Layout is simple and clear. Project is accesible through all modern browsers on both desktop and mobile devices. For build the front-end functionality CSS, HTML and JavaScript is used and for back-end logic, Python with Django framework is used. As it's e-commerce app payments options is available by using Stripe API.
@@ -182,3 +192,4 @@ The project was deployed using Heroku as a hosting platform. Static files and me
 
 - I received inspiration for this project through internet research. I visited websites such as [Currys](https://www.currys.ie/ieen/computing/laptops/laptops/315_3226_30328_xx_xx/xx-criteria.html), [Harvey Norman](https://www.harveynorman.ie/computing/laptops/), [D.I.D](https://www.did.ie/laptops-notebooks) and watched youtube tutorials, which helped me to put all the pieces together.
 - Many thanks to my mentor Victor Miclovich for all suggestions and possible solutions to various issues encountered during project development process.
+
