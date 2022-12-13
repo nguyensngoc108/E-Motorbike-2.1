@@ -1,10 +1,3 @@
-# TopTech - E-commerce Django App Project
-
-[![Build Status](https://travis-ci.org/adrian80z/e-commerce.svg?branch=master)](https://travis-ci.org/adrian80z/e-commerce)
-
-**Link to live version - [TopTech](https://e-toptech.herokuapp.com/)**
-
-TopTech is a e-commerce web application that allows users to search for products stored in database, add them to shopping cart and then make payment using Stripe. App has login system functionality. The guest user is able to browse, search and add product to cart only. Checkout and payment option is available for registerd users.
 
 ## UX
 
@@ -77,23 +70,15 @@ Anyone is able to perform search, view results, all details about selected produ
 
 ## Technologies used
 
-- **[Heroku](https://heroku.com/)** - is a platform that enables developers to build, run, and operate applications entirely in the cloud
 - **[GitHub](https://github.com/)** - provides hosting for software development version control using Git.
 - **[Git](https://git-scm.com/)** - version-control system for tracking changes in source code during software development.
 - **[Google Fonts](https://fonts.google.com/)** - library of free licensed fonts, an interactive web directory for browsing the library, and APIs for conveniently using the fonts via CSS ('Lato' font used in this project).
-- **[Python](https://www.python.org/)** - programming language.
 - **[JavaScript](https://en.wikipedia.org/wiki/JavaScript)** - used to program the behavior of Web pages.
 - **[jQuery](https://jquery.com)** - JavaScript library designed to simplify HTML DOM tree traversal and manipulation
 - **[HTML5](https://en.wikipedia.org/wiki/HTML5)** - standard markup language for creating Web pages.
 - **[CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets#CSS_3)** - used to define styles for Web pages, including the design, layout and variations in display for different devices and screen sizes.
 - **[VS Code](https://code.visualstudio.com/)** - code editor redefined and optimized for building and debugging modern web and cloud applications.
-- **[Bootstrap 4](https://getbootstrap.com/)** - free and open-source CSS framework directed at responsive, mobile-first front-end web development.
-- **[AWS S3](https://aws.amazon.com/)** - service offered by Amazon Web Services that provides object storage through a web service interface.
-- **[Django](https://docs.djangoproject.com/en/1.11/)** - a Python-based free and open-source web framework, which follows the model-template-view architectural pattern.
-- **[Stipe](https://stripe.com/ie)** - a payment company that allows individuals and businesses to make and receive payments over the Internet
-- **[Balsamiq](https://balsamiq.com/)** - a web-based user interface design tool for creating wireframe
-- **[Travis Ci](travis-ci.org)** - hosted continuous integration service used to build and test software projects hosted at GitHub and Bitbucket.
-
+- **[Php]()** - Php library.
 ## Testing
 
 ### Automated testing
