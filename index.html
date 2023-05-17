@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Web portal for motor servicing at home-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial scale="1.0">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+        <title>Industrial U20 Garage</title>
+        
+    </head>
+
+    <body>
+        <nav>
+            <div class="navTop">
+               <div class="navItem">
+                <a href="index.html">
+                <img src="/frontend/images/logo.png" width="70px">
+                </a>
+               </div>
+               <div class="navItem">
+                <div class="Search">
+                    <input type="text" placeholder="Search" class="searchInput">
+                    <img src="/frontend/images/Search.png" class="searchIcon" width="25px" height="25px">
+                </div>
+               </div>
+               <div class="navItem">
+                <div class="Login_btn"></div>
+                <input type="submit" value="Login">
+                </div>
+                <a class="Cart" href="/frontend/Cart.html"><img src="/frontend/images/Cart.png" width="40px" height="40px"></a>
+                
+               </div>
+               
+               <img src="/frontend/images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+            <div class="navBottom">
+             <ul class="navUl" id="MenuItems">
+                <li><a class="menuItem">Home</a></li>
+                <li><a class="menuItem">Services</a></li>
+                <li><a class="menuItem">About</a></li>
+                <li><a class="menuItem">Contact</a></li>
+             </ul>
+                
+            </div>
+        </nav>
+        <div class="slider">
+            <div class="sliderWrapper">
+                <div class="sliderPage">
+                    <img src="/frontend/images/Bg.jpeg" width="100%" height="100%">
+                    <div class="sliderBg">
+                        <h1 class= "sliderTitle">We bring<br> the best servies<br> to your transportation</h1>
+                    <a href="/frontend/index.html">
+                        <button class="sliderButton"><span>Explore Now! </span></button>
+                    </a>
+                    </div>
+                    
+                </div>
+                <div class="sliderPage">
+                    <img src="/frontend/images/Repair.jpg" width="100%" height="100%">
+                    <div class="sliderBg">
+                        
+                        <h1 class= "sliderTitle">We bring<br> the best services<br> to your transportation</h1>
+                     <a href="Services.html">
+                        <button class="sliderButton"><span>Explore Now!</span></button>
+                    </a>
+                    </div>
+                </div>
+                <div class="sliderPage">
+                    <img src="/frontend/images/About.jpg" width="100%" height="100%">
+                    <div class="sliderBg">
+                        <h1 class= "sliderTitle">We bring<br> the best servcies<br> to your transportation</h1>
+                        <a href="/frontend/About.html">
+                        <button class="sliderButton"><span>Explore Now! </span></button>
+                    </a>
+                    </div>
+                </div>
+                <div class="sliderPage">
+                    <img src="/frontend/images/Bg.jpeg" width="100%" height="100%">
+                    <div class="sliderBg">
+                        <h1 class= "sliderTitle">We bring<br> the best services<br> to your transportation</h1>
+                        <a href="/frontend/Contact.html">
+                        <button class="sliderButton"><span>Explore Now! </span></button>
+                    </a>
+                    </div>
+                </div>
+                <script src="/frontend/index.js"></script>
+           </div>
+        </div>
+        <!-- Featured categories -->
+        <section id="features">
+            <div class="categories">
+                <div class="small-container">
+                <div class="row">
+                    <div class="col-3">
+                        <img src="/frontend/images/car-engine-repair-and-replacement.jpeg" >
+                    </div>
+                    <div class="col-3">
+                        <img src="/frontend/images/car-engine-repair-and-replacement.jpeg" >
+                    </div>
+                    <div class="col-3">
+                        <img src="/frontend//images/car-engine-repair-and-replacement.jpeg" >
+                    </div>
+                    <div class="col-3"></div>
+                </div>
+                </div>
+            </div>
+        </section>
+        <!-- Services categories  -->
+        <div class="small-container">
+            <h2>Featured Services</h2>
+            <div class="row">
+                <div class="col-4">
+                    <img src="/frontend/images/car-engine-repair-and-replacement.jpeg" >
+                    <h4>Engine Repair</h4>
+                    <p>Engine repair is the process of repairing or replacing the engine of a motor vehicle. The engine is the most expensive and important component of a motor vehicle, and the repair cost can be considerable.</p>
+                </div>
+                <div class="col-4">
+                    <img src="/frontend/images/car-engine-repair-and-replacement.jpeg" > 
+                    <h4>Engine Repair</h4>
+                    <p>Engine repair is the process of repairing or replacing the engine of a motor vehicle. The engine is the most expensive and important component of a motor vehicle, and the repair cost can be considerable.</p>
+                </div>
+                <div class="col-4">
+                    <img src="/frontend/images/car-engine-repair-and-replacement.jpeg" >
+                    <h4>Engine Repair</h4>
+                    <p>Engine repair is the process of repairing or replacing the engine of a motor vehicle. The engine is the most expensive and important component of a motor vehicle, and the repair cost can be considerable.</p>
+                </div>
+                <div class="col-4">
+                    <img src="/frontend//images/car-engine-repair-and-replacement.jpeg" >
+                    <h4>Engine Repair</h4>
+                    <p>Engine repair is the process of repairing or replacing the engine of a motor vehicle. The engine is the most expensive and important component of a motor vehicle, and the repair cost can be considerable.</p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footerLeft">
+                <div class="footerMenu">
+                    <img src="/frontend/images/logo.png" width="50px">
+                    <a><br>Industrial U20 Garage is a company<br>  that provides services for<br>  motor servicing at home. We have a team of <br> experienced mechanics who are ready to serve you.</a>
+                    
+                </div>
+                <div class="footerMenu">
+                    <h1 class="fmenuTitle">About Us</h1>
+                    <ul class="fmenuList">
+                        <li class="flistItem">
+                            <h3 class="flistTitle">ADDRESS</h3>
+                                <a class="flistLink">No. 1, Jalan 1/1, Taman Industri U20,<br> 40150 Shah Alam, Selangor</a>
+                        </li>
+                        <li class="flistItem">
+                            <h3 class="flistTitle">PHONE</h3>
+                                <a href="tel:+84-91-920-8388" id="tel" class="flistLink">+84-91-920-8388</a>
+                        </li>
+                    </ul>
+                </div>
+               
+                <div class="footerMenu">
+                    <h1 class="fmenuTitle">Featured</h1>
+                    <ul class="fmenuList">
+                        <li class="flistItem">Home</li>
+                        <li class="flistItem">Services</li>
+                        <li class="flistItem">About</li>
+                        <li class="flistItem">Contact</li>
+                        
+                    </ul>
+                </div>
+
+            </div>
+            <div class="footerRight">
+                <div class="footerRightMenu">
+                    <h1 class="fmenuTitle">Get our news</h1>
+                    <div class="fMail">
+                        <input type = "text" placeholder="Enter your email" class="fMailInput">
+                        <button class="fButton">Join</button>
+                    </div>
+                </div>
+                <div class="footerRightMenu">
+                     <h1 class="fmenuTitle">Follow Us</h1>
+                     <div class="fIcons">
+                        <a href="https://www.facebook.com/profile.php?id=100086304619656&notif_id=1664959062473953&notif_t=profile_plus_admin_invite&ref=notif"><img src="/frontend/images/Facebook.png" alt="" class="fIcon" width="40px" height="40px"></a>
+                        <img src="/frontend/images/Ins.png" alt="" class="fIcon" width="40px" height="40px">
+                     </div>
+                </div>
+                <div class="footerRightMenu">
+                    <span class="copyright" >© 2021 Industrial U20 Garage. All rights reserved.</span>
+                </div>
+
+            </div>
+        </footer>
+        
+        
+    </body>
+</html>

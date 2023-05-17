@@ -1,0 +1,20 @@
+{
+  "name": "e-motorbike",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start" :"live-server src --verbose",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ITITIU20142/Web-Portal-for-Motor-Servicing-At-Home.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ITITIU20142/Web-Portal-for-Motor-Servicing-At-Home/issues"
+  },
+  "homepage": "https://github.com/ITITIU20142/Web-Portal-for-Motor-Servicing-At-Home#readme"
+}
